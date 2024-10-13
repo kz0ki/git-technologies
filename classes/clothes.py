@@ -18,7 +18,7 @@ class Clothes(ProductInterface, ABC):
         return self.code
 
     def get_name(self):
-        return self.brand * self.model
+        return self.brand + self.model
 
     def get_price(self):
         return self.price * self.quantity
